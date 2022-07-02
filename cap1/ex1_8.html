@@ -1,10 +1,27 @@
-<meta charset="UTC-8">
-<script>
-    //Entrada de dados, ler dois números:
-    var num1 = Number(prompt("Digite o primeiro número: "));
-    var num2 = Number(prompt("Digite o segundo número: "));
-    //Calcular a soma:
-    var soma = num1 + num2;
-    //exibe o resultado
-    alert("A soma é " + soma);
-</script>
+<!--
+Elaborar um programa que leia a duração de uma viagem em 
+dias e horas.
+Calcule e informe a duração total da viagem em números de 
+horas
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo da Viagem</title>
+    <script>
+        var diasDeViagem = Number(prompt("Quantos dias durou sua viagem?"));
+        var horasDeViagem = Number(prompt("Quantas horas durou sua viagem?"));
+        var horasTotais = ((diasDeViagem * 24) + horasDeViagem);
+
+        alert("A viagem durou " + horasTotais.toFixed(0) + " horas");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
